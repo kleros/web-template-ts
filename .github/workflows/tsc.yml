@@ -1,0 +1,13 @@
+name: TypeCheck
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  TypeScriptCompiler:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: yarn
+    - name: Run TypeScriptCompiler
+      run: yarn check-types
