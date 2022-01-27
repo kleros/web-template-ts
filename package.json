@@ -12,12 +12,9 @@
     "start": "parcel",
     "build": "parcel build",
     "check-style": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "check-types": "tsc --noEmit",
-    "postinstall": "husky install"
+    "check-types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.1.0",
-    "@commitlint/config-conventional": "^16.0.0",
     "@parcel/transformer-svg-react": "^2.2.1",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
@@ -32,8 +29,6 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-security": "^1.4.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.2",
     "parcel": "^2.2.1",
     "prettier": "^2.5.1",
     "typescript": "^4.5.5"
